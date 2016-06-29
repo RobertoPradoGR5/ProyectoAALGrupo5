@@ -1,1 +1,1 @@
-include ':app', ':servlets-backend'
+include ':app'
