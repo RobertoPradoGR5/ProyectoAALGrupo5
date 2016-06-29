@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/FeedingEPN.iml" filepath="$PROJECT_DIR$/FeedingEPN.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/servlets-backend/servlets-backend.iml" filepath="$PROJECT_DIR$/servlets-backend/servlets-backend.iml" />
     </modules>
   </component>
 </project>
