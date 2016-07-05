@@ -7,7 +7,8 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.aal.epn.feedingepn.Calculo_Calorias">
+    tools:context="com.aal.epn.feedingepn.Calculo_Calorias"
+    android:background="@color/highlighted_text_material_dark">
 
     <TextView
         android:layout_width="wrap_content"
@@ -145,5 +146,6 @@
         android:layout_alignRight="@+id/textView3"
         android:layout_alignEnd="@+id/textView3"
         android:layout_x="39dp"
-        android:layout_y="33dp" />
+        android:layout_y="33dp"
+        android:textStyle="bold" />
 </AbsoluteLayout>

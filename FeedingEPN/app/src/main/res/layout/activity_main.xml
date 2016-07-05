@@ -8,7 +8,8 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:orientation="horizontal"
-    tools:context="com.aal.epn.feedingepn.MainActivity">
+    tools:context="com.aal.epn.feedingepn.MainActivity"
+    android:background="@color/highlighted_text_material_dark">
 
     <RelativeLayout
         android:layout_width="0dip"
@@ -28,15 +29,18 @@
             android:orientation="vertical"
             android:id="@+id/linearLayout">
 
+            <ImageButton
+                android:layout_width="126dp"
+                android:layout_height="135dp"
+                android:id="@+id/imageButton2"
+                android:layout_gravity="center_horizontal"
+                android:src="@mipmap/foto" />
+
             <Button
-                android:text="Button1"
+                android:text="Registrar Mis Datos"
                 android:layout_width="fill_parent"
-                android:layout_height="wrap_content">
-            </Button>
-            <Button
-                android:text="Button2"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:background="@color/material_grey_50">
             </Button>
 
         </LinearLayout>
@@ -55,20 +59,17 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="New Button"
-                    android:id="@+id/button1"
-                    android:layout_weight="0.5"
-                    android:layout_gravity="right" />
+                <ImageButton
+                    android:layout_width="125dp"
+                    android:layout_height="129dp"
+                    android:id="@+id/imageButton3"
+                    android:src="@mipmap/normal" />
 
-                <Button
+                <ImageButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="New Button"
-                    android:layout_weight="0.5"
-                    android:id="@+id/button2" />
+                    android:id="@+id/imageButton4"
+                    android:src="@mipmap/especial" />
 
             </LinearLayout>
             <GridLayout
@@ -82,82 +83,52 @@
                 tools:context=".GridXMLActivity">
 
                 <Button
-                    android:layout_width="wrap_content"
+                    android:layout_width="180dp"
                     android:layout_height="wrap_content"
-                    android:text="New Button"
+                    android:text="Calculo de Calorias Diarias"
                     android:id="@+id/button4"
                     android:layout_row="0"
-                    android:layout_column="0" />
+                    android:layout_column="0"
+                    android:background="@color/colorPrimary" />
 
                 <Button
-                    android:layout_width="wrap_content"
+                    android:layout_width="157dp"
                     android:layout_height="wrap_content"
-                    android:text="New Button"
+                    android:text="me alimento bien ?"
                     android:layout_row="0"
                     android:layout_column="1"
                     android:id="@+id/button5"
-                    android:layout_gravity="center_horizontal" />
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/colorAccent" />
 
                 <Button
-                    android:layout_width="wrap_content"
+                    android:layout_width="184dp"
                     android:layout_height="wrap_content"
-                    android:text="New Button"
-                    android:id="@+id/button6"
-                    android:layout_row="0"
-                    android:layout_column="2"
-                    android:layout_gravity="center_horizontal" />
-
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="New Button"
+                    android:text="Tengo el peso ideal ?"
                     android:id="@+id/button7"
                     android:layout_row="1"
-                    android:layout_column="0" />
+                    android:layout_column="0"
+                    android:background="@color/material_deep_teal_500" />
 
                 <Button
-                    android:layout_width="wrap_content"
+                    android:layout_width="156dp"
                     android:layout_height="wrap_content"
                     android:text="New Button"
                     android:id="@+id/button"
                     android:layout_row="1"
-                    android:layout_column="1" />
-
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="New Button"
-                    android:id="@+id/button3"
-                    android:layout_row="1"
-                    android:layout_column="2"
-                    android:layout_gravity="center_horizontal" />
-
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="New Button"
-                    android:layout_row="2"
-                    android:layout_column="0"
-                    android:id="@+id/button8" />
-
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="New Button"
-                    android:id="@+id/button9"
-                    android:layout_row="2"
                     android:layout_column="1"
-                    android:layout_gravity="center_horizontal" />
+                    android:background="@android:color/holo_red_light" />
 
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="New Button"
-                    android:layout_row="2"
-                    android:layout_column="2"
-                    android:id="@+id/button10"
-                    android:layout_gravity="center_horizontal" />
             </GridLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SALIR"
+                android:id="@+id/buttonSalir"
+                android:layout_row="2"
+                android:layout_column="1"
+                android:layout_gravity="center_horizontal" />
 
         </LinearLayout>
         <!-- 70% Width End-->
