@@ -3,141 +3,141 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:orientation="horizontal"
-    tools:context="com.aal.epn.feedingepn.MainActivity"
-    android:background="@color/highlighted_text_material_dark">
+    android:orientation="vertical"
+    android:elevation="10dp"
+    android:background="#F5F5F5"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"></LinearLayout>
 
     <RelativeLayout
-        android:layout_width="0dip"
-        android:layout_height="fill_parent"
-        android:layout_weight="0">
-    </RelativeLayout>
-    <RelativeLayout
-        android:layout_width="0dip"
-        android:layout_height="fill_parent"
-        android:layout_weight="1">
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0288D1"
+        android:padding="20dp"
+        android:elevation="20dp" >
 
-        <!-- This is the part that's 70% of the total width. I'm inserting a LinearLayout and buttons.-->
-        <LinearLayout
-            android:layout_width="fill_parent"
+        <TextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerInParent="false"
-            android:orientation="vertical"
-            android:id="@+id/linearLayout">
+            android:text="@string/titulo_pantalla"
+            android:id="@+id/textView8"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="30dp" />
+    </RelativeLayout>
 
-            <ImageButton
-                android:layout_width="126dp"
-                android:layout_height="135dp"
-                android:id="@+id/imageButton2"
-                android:layout_gravity="center_horizontal"
-                android:src="@mipmap/foto" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@color/accent_material_dark"
+        android:elevation="15dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/imageView"
+            android:src="@mipmap/foto"
+            android:background="#03A9F4" />
+    </LinearLayout>
 
             <Button
                 android:text="Registrar Mis Datos"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/material_grey_50">
+                android:background="#448AFF"
+                android:elevation="20dp">
             </Button>
 
-        </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="67dp"
+        android:background="#B3E5FC"
+        android:layout_weight="0.53"
+        android:elevation="10dp">
 
-        <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_below="@+id/linearLayout"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:weightSum="1">
+        <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageButton4"
+                        android:src="@mipmap/especial"
+                        android:layout_gravity="center_horizontal" />
+    </LinearLayout>
 
-            <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:layout_weight="0.39"
+        android:background="#ffffff"
+        android:elevation="5dp">
 
-                <ImageButton
-                    android:layout_width="125dp"
-                    android:layout_height="129dp"
-                    android:id="@+id/imageButton3"
-                    android:src="@mipmap/normal" />
-
-                <ImageButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/imageButton4"
-                    android:src="@mipmap/especial" />
-
-            </LinearLayout>
-            <GridLayout
-                android:id="@+id/GridLayout1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:columnCount="3"
-                android:rowCount="3"
-                android:orientation="horizontal"
-                android:layout_gravity="center"
-                tools:context=".GridXMLActivity">
-
-                <Button
-                    android:layout_width="180dp"
-                    android:layout_height="wrap_content"
-                    android:text="Calculo de Calorias Diarias"
-                    android:id="@+id/button4"
-                    android:layout_row="0"
-                    android:layout_column="0"
-                    android:background="@color/colorPrimary" />
-
-                <Button
-                    android:layout_width="157dp"
-                    android:layout_height="wrap_content"
-                    android:text="me alimento bien ?"
-                    android:layout_row="0"
-                    android:layout_column="1"
-                    android:id="@+id/button5"
-                    android:layout_gravity="center_horizontal"
-                    android:background="@color/colorAccent" />
-
-                <Button
-                    android:layout_width="184dp"
-                    android:layout_height="wrap_content"
-                    android:text="Tengo el peso ideal ?"
-                    android:id="@+id/button7"
-                    android:layout_row="1"
-                    android:layout_column="0"
-                    android:background="@color/material_deep_teal_500" />
-
-                <Button
-                    android:layout_width="156dp"
-                    android:layout_height="wrap_content"
-                    android:text="New Button"
-                    android:id="@+id/button"
-                    android:layout_row="1"
-                    android:layout_column="1"
-                    android:background="@android:color/holo_red_light" />
-
-            </GridLayout>
+        <GridLayout
+            android:id="@+id/GridLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:columnCount="3"
+            android:rowCount="3"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            tools:context=".GridXMLActivity">
 
             <Button
-                android:layout_width="wrap_content"
+                android:layout_width="184dp"
                 android:layout_height="wrap_content"
-                android:text="SALIR"
-                android:id="@+id/buttonSalir"
+                android:text="Calculo de Calorias Diarias"
+                android:id="@+id/button4"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:background="#448AFF" />
+
+            <Button
+                android:layout_width="184dp"
+                android:layout_height="wrap_content"
+                android:text="CALCULO DE INDICE CINTURA"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:id="@+id/button5"
+                android:background="#FF9800" />
+
+            <Button
+                android:layout_width="184dp"
+                android:layout_height="wrap_content"
+                android:text="Tengo el peso ideal ?"
+                android:id="@+id/button7"
+                android:layout_row="2"
+                android:layout_column="0"
+                android:background="#8BC34A" />
+
+            <Button
+                android:layout_width="184dp"
+                android:layout_height="wrap_content"
+                android:text="me alimento bien ?"
+                android:id="@+id/button"
                 android:layout_row="2"
                 android:layout_column="1"
-                android:layout_gravity="center_horizontal" />
+                android:background="#7C4DFF" />
 
-        </LinearLayout>
-        <!-- 70% Width End-->
+        </GridLayout>
 
-    </RelativeLayout>
-    <RelativeLayout
-        android:layout_width="0dip"
-        android:layout_height="fill_parent"
-        android:layout_weight="0">
-    </RelativeLayout>
+    </LinearLayout>
+
+    <ImageButton
+        android:layout_width="62dp"
+        android:layout_height="93dp"
+        android:id="@+id/imageButton2"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_x="101dp"
+        android:layout_y="397dp"
+        android:src="@mipmap/salir"
+        android:layout_gravity="center_horizontal" />
+
 
 </LinearLayout>
