@@ -6,10 +6,14 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+
 public class InicioActivity extends AppCompatActivity {
     Button btnNormal;
     Button btnEspecial;
     Button btnSemana;
+    Button btnIMC;
+    Button btnIndiceCintura;
+    Button btnSalir;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -17,6 +21,9 @@ public class InicioActivity extends AppCompatActivity {
         btnNormal=(Button)findViewById(R.id.btnNormal);
         btnEspecial=(Button)findViewById(R.id.btnEspecial);
         btnSemana=(Button)findViewById(R.id.btnSemana);
+        btnIMC=(Button)findViewById(R.id.btnCalculoIMC);
+        btnIndiceCintura=(Button)findViewById(R.id.btnIndiceCintura);
+        btnSalir=(Button)findViewById(R.id.btnSalir);
 
         btnNormal.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -41,5 +48,33 @@ public class InicioActivity extends AppCompatActivity {
                 startActivity(abrir);
             }
         });
+
+        btnIMC.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent abrir=new Intent(InicioActivity.this,IMC.class);
+                startActivity(abrir);
+            }
+        });
+
+        btnIndiceCintura.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent abrir=new Intent(InicioActivity.this,IndiceCinturaCadera.class);
+                startActivity(abrir);
+            }
+        });
+        btnSalir.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+                Intent intent = new Intent(Intent.ACTION_MAIN);
+                intent.addCategory(Intent.CATEGORY_HOME);
+                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                startActivity(intent);
+            }
+        });
+
+
     }
 }

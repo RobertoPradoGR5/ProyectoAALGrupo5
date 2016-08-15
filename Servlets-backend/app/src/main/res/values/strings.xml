@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">Feeding EPN</string>
+    <string name="titulo_pantalla">FeedingEPN</string>
+    <string name="title_activity_imc">IMC</string>
+    <string name="action_settings">Settings</string>
+    <string name="radio_male">Male</string>
+    <string name="radio_female">Female</string>
+    <string name="hello_world">Hello world!</string>
+    <string-array name="height_arrays">
+        <item>Feet/Inches</item>
+        <item>Cms</item>
+    </string-array>
 </resources>

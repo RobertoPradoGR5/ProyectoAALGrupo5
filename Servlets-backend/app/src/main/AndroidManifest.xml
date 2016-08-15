@@ -10,7 +10,7 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".almuerzoActivity"/>
+        <activity android:name=".almuerzoActivity" />
         <activity android:name=".beneficioActivity" />
         <activity android:name=".almuerzosActivity" />
         <activity android:name=".semanaActivity" />
@@ -21,6 +21,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".IMC"
+            android:label="@string/title_activity_imc"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".IndiceCinturaCadera"></activity>
     </application>
 
 </manifest>
