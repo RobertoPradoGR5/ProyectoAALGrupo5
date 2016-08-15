@@ -1,0 +1,98 @@
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:shrinkColumns="*"  android:stretchColumns="*" android:background="#ffffff">
+    <!-- Row 1 with single column -->
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:gravity="center_horizontal">
+        <TextView
+            android:id="@+id/item0" android:text=""
+            android:layout_weight="1"
+            android:textColor="#000000"
+            android:padding="18dip" android:gravity="center"
+            android:textSize="10dp"
+            android:textStyle="bold"
+            />
+    </TableRow>
+
+    <!-- Row 1 with single column -->
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:gravity="center_horizontal">
+        <TextView
+            android:id="@+id/item00" android:text="Ver almuerzos"
+            android:layout_weight="1"  android:background="@color/accent_material_light" android:textColor="#000000"
+            android:padding="10dip" android:gravity="center"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            android:layout_width="fill_parent" />
+    </TableRow>
+    <!-- Row 3 with 3 columns -->
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/item1" android:text="lunes"
+            android:layout_weight="3" android:background="#F4FA58"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:padding="18dip" android:gravity="center"
+            android:textSize="9dp"
+            android:textStyle="italic|bold" />
+    </TableRow>
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:gravity="center_horizontal">
+        <Button
+            android:id="@+id/item2" android:text="martes"
+            android:layout_weight="3" android:background="#FFBF00"
+            android:textColor="#000000"
+            android:padding="18dip" android:gravity="center"
+            android:textSize="9dp"
+            android:textStyle="italic|bold" />
+    </TableRow>
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:gravity="center_horizontal">
+        <Button
+            android:id="@+id/item3" android:text="miércoles"
+            android:layout_weight="3" android:background="#F4FA58"
+            android:textColor="#000000"
+            android:padding="18dip" android:gravity="center"
+            android:textSize="9dp"
+            android:textStyle="italic|bold" />
+    </TableRow>
+    <!-- Row 2 with 3 columns -->
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+        <Button
+            android:id="@+id/item4" android:text="jueves"
+            android:layout_weight="3" android:background="#FFBF00"
+            android:textColor="#000000"
+            android:padding="20dip" android:gravity="center"
+            android:textSize="9dp"
+            android:textStyle="italic|bold" />
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableRow10"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+        <Button
+            android:id="@+id/item5" android:text="viernes"
+            android:layout_weight="3" android:background="#F4FA58"
+            android:textColor="#000000"
+            android:padding="20dip" android:gravity="center"
+            android:textSize="9dp"
+            android:textStyle="italic|bold" />
+    </TableRow>
+
+</TableLayout>
